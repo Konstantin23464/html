@@ -38,12 +38,24 @@
     </div>
     </div>
     <div class="carosel-item">
+        <h2>thunkable</h2>
         <p>Scratch</p>
     </div><div class="carosel-item">
+        <h2>construct</h2>
+        <div>
         <p>Scratch</p>
     </div>
 </div>
+    </div>
+<button id="prev">назад</button>
+<button id="next">вперед</button>
     </section>
+    <script>
+        document.getElementById('prev').addEventListener('click', () => {
+            document.querySelector('.carousel').scrollBy(-1000, 0)
+        
+        })
+    </script>
 
 </section>
 </body>
